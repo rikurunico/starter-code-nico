@@ -17,7 +17,7 @@
           <form method="POST" action="{{route('password.update')}}">
             @csrf
             <input type="text" value="{{ $request->token }}" hidden name="token">
-            <div class="form-group">
+            <div class="form-group" hidden>
               <label for="email">Email</label>
               <input id="email" type="email" class="form-control @error('email')
               is-invalid
