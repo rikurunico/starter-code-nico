@@ -12,6 +12,7 @@ class AuthServiceProvider extends ServiceProvider
 {
     public static $permission = [
         'dashboard' => ['admin', 'user'],
+        'profile' => ['admin', 'user']
     ];
 
     /**

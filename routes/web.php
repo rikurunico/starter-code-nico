@@ -21,4 +21,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('home', function () {
         return view('dashboard.home');
     })->name('home')->middleware('can:dashboard');
+
+    Route::get('profile', function () {
+        return view('dashboard.profile');
+    })->name('profile')->middleware('can:profile');
 });
