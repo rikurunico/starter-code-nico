@@ -40,7 +40,7 @@
                                     <div class="slash"></div> {{ Auth::user()->role }}
                                 </div>
                             </div>
-                            {{ Auth::user()->bio }}
+                            {!! Auth::user()->bio !!}
                         </div>
                         <div class="card-footer text-center">
                             <div class="font-weight-bold mb-2">Follow {{ Auth::user()->name }} On</div>
